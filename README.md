@@ -18,16 +18,17 @@ This project aims to identify arbitrage opportunities using data from CoinGecko'
 
 ### How It Works
 
+#### Converting Exchange Rates to Edges
+
 To apply the Bellman-Ford algorithm, we need to convert exchange rates into weighted edges in a graph. This is achieved by taking the logarithm of the exchange rates. Let \( r_{ij} \) be the exchange rate from currency \( i \) to currency \( j \), and let \( f_{ij} \) be the transaction fee associated with this exchange. The weight \( w_{ij} \) of the edge from \( i \) to \( j \) is calculated as follows:
 
-\[ w_{ij} = -\log(r_{ij} \cdot (1 - f_{ij})) \]
+$$ w_{ij} = -\log(r_{ij} \cdot (1 - f_{ij})) $$
 
 This transformation ensures that a negative cycle in the graph corresponds to an arbitrage opportunity.
 
-### Bellman-Ford Algorithm
+#### Bellman-Ford Algorithm
 
 The Bellman-Ford algorithm is used to detect negative cycles in the graph. If a negative cycle exists, it means there is a sequence of trades that can yield a profit without risk.
-
 
 ### Contributing
 
