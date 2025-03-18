@@ -1,5 +1,5 @@
 # Crypto Arbitrage Solver
-This project aims to identify arbitrage opportunities using data from CoinGecko's API for data collection and the Bellman-Ford algorithm to detect negative cycles, which indicate potential arbitrage.
+This project aims to identify arbitrage opportunities using data from CoinGecko's API for data collection and the Bellman-Ford algorithm to detect negative cycles, which indicate potential arbitrage. This doesn't actually work btw /:
 
 ### Project Structure
 
