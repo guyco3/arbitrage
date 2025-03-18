@@ -20,7 +20,7 @@ This project aims to identify arbitrage opportunities using data from CoinGecko'
 
 #### Converting Exchange Rates to Edges
 
-To apply the Bellman-Ford algorithm, we need to convert exchange rates into weighted edges in a graph. This is achieved by taking the logarithm of the exchange rates. Let \( r_{ij} \) be the exchange rate from currency \( i \) to currency \( j \), and let \( f_{ij} \) be the transaction fee associated with this exchange. The weight \( w_{ij} \) of the edge from \( i \) to \( j \) is calculated as follows:
+To apply the Bellman-Ford algorithm, we need to convert exchange rates into weighted edges in a graph. This is achieved by taking the logarithm of the exchange rates. Let $$ r_{ij} $$ be the exchange rate from currency $$ i $$ to currency $$ j $$, and let $$ f_{ij} $$ be the transaction fee associated with this exchange. The weight $$ w_{ij} $$ of the edge from $$ i $$ to $$ j $$ is calculated as follows:
 
 $$ w_{ij} = -\log(r_{ij} \cdot (1 - f_{ij})) $$
 
